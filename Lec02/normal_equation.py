@@ -44,10 +44,8 @@ plot1 = fig.add_subplot(1,1,1)
 plt.xlim(0, 100000)
 plt.ylim(0, 100000)
 plot1.scatter(Xt, Yt)
-plt.ion()
-plt.show()
 lines = plot1.plot(Xte, Y_pred, 'r-', lw=3)
- 
+plt.show()
 
 #test
 cost = np.sum(abs(Y_pred - Yte))
